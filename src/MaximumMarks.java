@@ -5,7 +5,7 @@ public class MaximumMarks {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number of students");
         int noOfStudents = scanner.nextInt();
-        scanner.nextLine();
+        String temp = scanner.nextLine();
         int maxScore = 0;
         String maxScoreName = null;
 
@@ -19,7 +19,7 @@ public class MaximumMarks {
                 maxScore = score;
                 maxScoreName = name;
             }
-            scanner.nextLine();
+            temp = scanner.nextLine();
         }
         System.out.println("maxScoreName = " + maxScoreName);
         System.out.println("maxScore = " + maxScore);
